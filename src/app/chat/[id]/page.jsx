@@ -3,9 +3,9 @@
 import { useQuery } from "convex/react";
 import { api } from "@/convex/_generated/api";
 import { useParams, useRouter } from "next/navigation";
-import ChatHeader from "@/components/chat/ChatHeader";
+import ChatHeader from "@/components/chat/chatheader";
 import MessageBubble from "@/components/chat/MessageBubble";
-import ChatInput from "@/components/chat/ChatInput";
+import MessageInput from "@/components/chat/chatinput";
 import { useUser } from "@clerk/nextjs";
 import { Loader2 } from "lucide-react";
 
@@ -93,7 +93,7 @@ export default function ChatPage() {
 
       {/* منطقة إدخال النص */}
       <div className="p-4 bg-background border-t">
-        <ChatInput conversationId={conversationId} userId={clerkUser?.id} />
+        <MessageInput conversationId={conversationId} userId={clerkUser?.id} />
       </div>
     </div>
   );

@@ -1,7 +1,7 @@
 "use client";
 
 import { useQuery } from "convex/react";
-import { api } from "@/convex/_generated/api";
+import { api } from "../../../../convex/_generated/api";
 import { useParams, useRouter } from "next/navigation";
 import ChatHeader from "@/components/chat/chatheader";
 import MessageBubble from "@/components/chat/MessageBubble";
